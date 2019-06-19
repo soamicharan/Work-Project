@@ -17,7 +17,7 @@ class CandidateDetailsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create candidate_detail" do
     assert_difference('CandidateDetail.count') do
-      post candidate_details_url, params: { candidate_detail: { DOC: @candidate_detail.DOC, DOR: @candidate_detail.DOR, address: @candidate_detail.address, age: @candidate_detail.age, branch: @candidate_detail.branch, contact_no: @candidate_detail.contact_no, email: @candidate_detail.email, experience: @candidate_detail.experience, gender: @candidate_detail.gender, name: @candidate_detail.name, qualification: @candidate_detail.qualification, reg_no: @candidate_detail.reg_no, remarks_mobility: @candidate_detail.remarks_mobility, s_no: @candidate_detail.s_no, specialization: @candidate_detail.specialization, src_reg: @candidate_detail.src_reg, state: @candidate_detail.state, status: @candidate_detail.status, zone: @candidate_detail.zone } }
+      post candidate_details_url, params: { candidate_detail: { DOC: @candidate_detail.DOC, DOR: @candidate_detail.DOR, address: @candidate_detail.address, age: @candidate_detail.age, branch: @candidate_detail.branch, contact_no: @candidate_detail.contact_no, email: @candidate_detail.email, experience: @candidate_detail.experience, gender: @candidate_detail.gender, name: @candidate_detail.name, qualification: @candidate_detail.qualification, reg_no: @candidate_detail.reg_no, remark_mobility: @candidate_detail.remark_mobility, s_no: @candidate_detail.s_no, specialization: @candidate_detail.specialization, src_reg: @candidate_detail.src_reg, state: @candidate_detail.state, status: @candidate_detail.status, zone: @candidate_detail.zone } }
     end
 
     assert_redirected_to candidate_detail_url(CandidateDetail.last)
@@ -34,7 +34,7 @@ class CandidateDetailsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update candidate_detail" do
-    patch candidate_detail_url(@candidate_detail), params: { candidate_detail: { DOC: @candidate_detail.DOC, DOR: @candidate_detail.DOR, address: @candidate_detail.address, age: @candidate_detail.age, branch: @candidate_detail.branch, contact_no: @candidate_detail.contact_no, email: @candidate_detail.email, experience: @candidate_detail.experience, gender: @candidate_detail.gender, name: @candidate_detail.name, qualification: @candidate_detail.qualification, reg_no: @candidate_detail.reg_no, remarks_mobility: @candidate_detail.remarks_mobility, s_no: @candidate_detail.s_no, specialization: @candidate_detail.specialization, src_reg: @candidate_detail.src_reg, state: @candidate_detail.state, status: @candidate_detail.status, zone: @candidate_detail.zone } }
+    patch candidate_detail_url(@candidate_detail), params: { candidate_detail: { DOC: @candidate_detail.DOC, DOR: @candidate_detail.DOR, address: @candidate_detail.address, age: @candidate_detail.age, branch: @candidate_detail.branch, contact_no: @candidate_detail.contact_no, email: @candidate_detail.email, experience: @candidate_detail.experience, gender: @candidate_detail.gender, name: @candidate_detail.name, qualification: @candidate_detail.qualification, reg_no: @candidate_detail.reg_no, remark_mobility: @candidate_detail.remark_mobility, s_no: @candidate_detail.s_no, specialization: @candidate_detail.specialization, src_reg: @candidate_detail.src_reg, state: @candidate_detail.state, status: @candidate_detail.status, zone: @candidate_detail.zone } }
     assert_redirected_to candidate_detail_url(@candidate_detail)
   end
 

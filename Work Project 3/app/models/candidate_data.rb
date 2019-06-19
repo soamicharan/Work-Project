@@ -1,2 +1,0 @@
-class CandidateData < ApplicationRecord
-end

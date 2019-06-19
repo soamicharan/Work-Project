@@ -15,9 +15,9 @@ one:
   contact_no: 1
   state: MyString
   qualification: MyString
-  specialization: MyText
+  specialization: MyString
   experience: MyText
-  remarks_mobility: 1
+  remark_mobility: 1
   DOC: 2019-06-19
   status: MyString
 
@@ -36,8 +36,8 @@ two:
   contact_no: 1
   state: MyString
   qualification: MyString
-  specialization: MyText
+  specialization: MyString
   experience: MyText
-  remarks_mobility: 1
+  remark_mobility: 1
   DOC: 2019-06-19
   status: MyString

@@ -15,9 +15,9 @@ class CreateCandidateDetails < ActiveRecord::Migration[5.2]
       t.integer :contact_no
       t.string :state
       t.string :qualification
-      t.text :specialization
+      t.string :specialization
       t.text :experience
-      t.integer :remarks_mobility
+      t.integer :remark_mobility
       t.date :DOC
       t.string :status
 

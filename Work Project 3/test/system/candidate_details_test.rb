@@ -26,7 +26,7 @@ class CandidateDetailsTest < ApplicationSystemTestCase
     fill_in "Name", with: @candidate_detail.name
     fill_in "Qualification", with: @candidate_detail.qualification
     fill_in "Reg no", with: @candidate_detail.reg_no
-    fill_in "Remarks mobility", with: @candidate_detail.remarks_mobility
+    fill_in "Remark mobility", with: @candidate_detail.remark_mobility
     fill_in "S no", with: @candidate_detail.s_no
     fill_in "Specialization", with: @candidate_detail.specialization
     fill_in "Src reg", with: @candidate_detail.src_reg
@@ -55,7 +55,7 @@ class CandidateDetailsTest < ApplicationSystemTestCase
     fill_in "Name", with: @candidate_detail.name
     fill_in "Qualification", with: @candidate_detail.qualification
     fill_in "Reg no", with: @candidate_detail.reg_no
-    fill_in "Remarks mobility", with: @candidate_detail.remarks_mobility
+    fill_in "Remark mobility", with: @candidate_detail.remark_mobility
     fill_in "S no", with: @candidate_detail.s_no
     fill_in "Specialization", with: @candidate_detail.specialization
     fill_in "Src reg", with: @candidate_detail.src_reg

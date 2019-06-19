@@ -10,34 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_19_073910) do
-
-  create_table "candidate_data", force: :cascade do |t|
-    t.integer "s_no"
-    t.string "src_reg"
-    t.string "zone"
-    t.date "DOR"
-    t.string "reg_no"
-    t.string "name"
-    t.string "gender"
-    t.integer "age"
-    t.text "address"
-    t.string "branch"
-    t.string "email"
-    t.integer "contact_no"
-    t.string "state"
-    t.string "qualification"
-    t.text "specialization"
-    t.text "experience"
-    t.integer "remarks_mobility"
-    t.date "DOC"
-    t.string "status"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["contact_no"], name: "index_candidate_data_on_contact_no", unique: true
-    t.index ["email"], name: "index_candidate_data_on_email", unique: true
-    t.index ["s_no"], name: "index_candidate_data_on_s_no", unique: true
-  end
+ActiveRecord::Schema.define(version: 2019_06_19_143141) do
 
   create_table "candidate_details", force: :cascade do |t|
     t.integer "s_no"
@@ -54,9 +27,9 @@ ActiveRecord::Schema.define(version: 2019_06_19_073910) do
     t.integer "contact_no"
     t.string "state"
     t.string "qualification"
-    t.text "specialization"
+    t.string "specialization"
     t.text "experience"
-    t.integer "remarks_mobility"
+    t.integer "remark_mobility"
     t.date "DOC"
     t.string "status"
     t.datetime "created_at", null: false
